@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Redline Intelligence</title>
+    <meta name="description" content="Hear what our clients have to say about Redline Intelligence and our AI, machine learning, and automation solutions.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E53E3E',
+                        secondary: '#1A202C',
+                        accent: '#F7FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-accent font-sans">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-secondary to-primary">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-6 z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">Client Testimonials</h1>
+            <p class="text-xl text-white mb-8 animate-fade-in animation-delay-100">See how Redline Intelligence's AI and automation solutions have transformed businesses.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary mb-8">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card scroll-animate">
+                    <img src="assets/images/client1.jpg" alt="Client 1" class="w-20 h-20 rounded-full mx-auto mb-4">
+                    <p class="text-lg text-gray-600 italic">"Redline Intelligence's automation solutions saved us countless hours and boosted our productivity exponentially. Highly recommend!"</p>
+                    <h3 class="text-xl font-semibold text-secondary mt-4">John Doe</h3>
+                    <p class="text-gray-500">CEO, TechCorp</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card scroll-animate">
+                    <img src="assets/images/client2.jpg" alt="Client 2" class="w-20 h-20 rounded-full mx-auto mb-4">
+                    <p class="text-lg text-gray-600 italic">"Their AI-powered CRM solutions completely transformed how we engage with customers. The results speak for themselves!"</p>
+                    <h3 class="text-xl font-semibold text-secondary mt-4">Jane Smith</h3>
+                    <p class="text-gray-500">CTO, Innovate Inc.</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card scroll-animate">
+                    <img src="assets/images/client3.jpg" alt="Client 3" class="w-20 h-20 rounded-full mx-auto mb-4">
+                    <p class="text-lg text-gray-600 italic">"Thanks to Redline Intelligence's AI solutions, our business processes are more efficient and streamlined. Excellent team!"</p>
+                    <h3 class="text-xl font-semibold text-secondary mt-4">Sarah Lee</h3>
+                    <p class="text-gray-500">Operations Manager, LogiTech</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Schedule a free consultation to learn how Redline Intelligence's AI solutions can help you drive success.</p>
+            <a href="contact.html" class="bg-white text-primary px-8 py-4 rounded-full font-bold hover:bg-gray-100 transform hover:scale-105 transition duration-300 inline-block">
+                Contact Us <i data-feather="send" class="inline ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

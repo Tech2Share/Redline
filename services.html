@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redline Intelligence | Our Services</title>
+    <meta name="description" content="Explore Redline Intelligence's AI, automation, and tech solutions for businesses.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E53E3E',
+                        secondary: '#1A202C',
+                        accent: '#F7FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-accent font-sans">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-secondary to-primary">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-6 z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">Our Services</h1>
+            <h2 class="text-xl md:text-3xl text-white mb-8 animate-fade-in animation-delay-100">Cutting-Edge AI, Automation & Custom Solutions for Your Business</h2>
+            <p class="text-lg md:text-xl text-white mb-12 max-w-3xl mx-auto animate-fade-in animation-delay-200">Explore our range of services designed to transform your business through advanced technology and innovation.</p>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary mb-4">Our Expertise</h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Discover our diverse services designed to meet the unique needs of your business, powered by cutting-edge technology.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI & Machine Learning -->
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i data-feather="cpu"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">AI & Machine Learning</h3>
+                    <p class="text-gray-600">We offer custom AI models, data analysis, natural language processing, and deployment using tools like TensorFlow, PyTorch, and scikit-learn.</p>
+                    <a href="#ai-machine-learning" class="mt-4 inline-block text-primary hover:underline">Learn more →</a>
+                </div>
+                
+                <!-- AI Agents -->
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i data-feather="settings"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">AI Agents</h3>
+                    <p class="text-gray-600">Development of autonomous agents for task execution and decision-making with tools like LangChain, AutoGPT, OpenAI APIs, and more.</p>
+                    <a href="#ai-agents" class="mt-4 inline-block text-primary hover:underline">Learn more →</a>
+                </div>
+                
+                <!-- Project Management -->
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i data-feather="database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Project Management</h3>
+                    <p class="text-gray-600">We offer strategic planning and execution, helping streamline project delivery with tools like Jira, Asana, Trello, and Notion.</p>
+                    <a href="#project-management" class="mt-4 inline-block text-primary hover:underline">Learn more →</a>
+                </div>
+                
+                <!-- CRM Solutions -->
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i data-feather="bar-chart-2"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">CRM Solutions</h3>
+                    <p class="text-gray-600">Custom CRM solutions with Salesforce, HubSpot, and Zoho CRM for enhanced customer relationships and workflow automation.</p>
+                    <a href="#crm-solutions" class="mt-4 inline-block text-primary hover:underline">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary mb-8">Other Specialized Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Web Scraping -->
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i data-feather="database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Web Scraping</h3>
+                    <p class="text-gray-600">Data extraction and automation using Python, Selenium, BeautifulSoup, Scrapy, and Octoparse to gather valuable insights.</p>
+                    <a href="#web-scraping" class="mt-4 inline-block text-primary hover:underline">Learn more →</a>
+                </div>
+                
+                <!-- Chatbot Development -->
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i data-feather="message-circle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Chatbot Development</h3>
+                    <p class="text-gray-600">We create interactive chatbots for various platforms using Dialogflow, Voice Flow, Rasa, and Botpress to enhance user engagement.</p>
+                    <a href="#chatbot-development" class="mt-4 inline-block text-primary hover:underline">Learn more →</a>
+                </div>
+                
+                <!-- Digital Marketing -->
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i data-feather="trending-up"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Digital Marketing</h3>
+                    <p class="text-gray-600">Comprehensive SEO, content strategy, and performance tracking solutions using tools like Google Analytics, SEMrush, and Mailchimp.</p>
+                    <a href="#digital-marketing" class="mt-4 inline-block text-primary hover:underline">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Schedule a free consultation with our experts to discuss your needs and explore how our solutions can help.</p>
+            <a href="contact.html" class="bg-white text-primary px-8 py-4 rounded-full font-bold hover:bg-gray-100 transform hover:scale-105 transition duration-300 inline-block">
+                Contact Us <i data-feather="send" class="inline ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #F7FAFC; /* Subtle background color for the body */
+    color: #1A202C; /* Default text color */
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.animation-delay-100 {
+    animation-delay: 0.1s;
+}
+
+.animation-delay-200 {
+    animation-delay: 0.2s;
+}
+
+.animation-delay-300 {
+    animation-delay: 0.3s;
+}
+
+/* Service Cards */
+.service-card {
+    background-color: #fff; /* White background for service cards */
+    padding: 2rem; /* Padding inside the cards */
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0); /* Initial state for hover effect */
+    position: relative;
+}
+
+.service-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-8px); /* Lift the card on hover */
+}
+
+.service-card .card-icon {
+    background-color: #E53E3E; /* Red background for icons */
+    background-opacity: 0.2; /* Lighter red background */
+    border-radius: 50%; /* Circle */
+    width: 3rem; /* Icon size */
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem; /* Space below the icon */
+    color: white; /* White icon color */
+    position: absolute; /* Positioning icon inside the card */
+    top: -1.5rem; /* Slightly position the icon outside the card */
+    left: 50%;
+    transform: translateX(-50%); /* Center the icon horizontally */
+    padding: 0.5rem;
+}
+
+.service-card .card-icon i {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Headings and Description Styling */
+.service-card h3 {
+    font-size: 1.25rem; /* Slightly smaller but still bold heading */
+    font-weight: 600;
+    color: #1A202C; /* Dark color for the text */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #4A5568; /* Slightly lighter gray for text */
+    line-height: 1.5;
+}
+
+/* Learn More Link Styling */
+.service-card a {
+    font-weight: bold;
+    color: #E53E3E; /* Red color for the link */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.service-card a:hover {
+    color: #C53030; /* Darker red on hover */
+    text-decoration: underline;
+}
+
+/* Hover Effects */
+.service-card:hover .card-icon {
+    background-color: #C53030; /* Darker red on hover for the icon */
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+    .text-7xl {
+        font-size: 3.5rem; /* Smaller text for mobile */
+    }
+
+    /* Adjust button text size for smaller screens */
+    button, a.bg-white {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Reduce padding and margins on smaller screens */
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .service-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .service-card .card-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .service-card .card-icon i {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+/* Larger screens */
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on larger screens */
+    }
+}

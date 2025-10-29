@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Redline Intelligence</title>
+    <meta name="description" content="Learn more about Redline Intelligence, our mission, and the team behind our AI and automation solutions.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E53E3E',
+                        secondary: '#1A202C',
+                        accent: '#F7FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-accent font-sans">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-secondary to-primary">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-6 z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">About Us</h1>
+            <p class="text-xl text-white mb-8 animate-fade-in animation-delay-100">Get to know the team behind Redline Intelligence and our mission to transform businesses with AI and automation.</p>
+        </div>
+    </section>
+
+    <!-- Company Overview Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary mb-4">Our Company</h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Redline Intelligence is a leading technology company specializing in AI, machine learning, automation, and custom software development. Our mission is to help businesses scale through the power of advanced technology.</p>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary mb-6">Our Vision & Mission</h2>
+            <p class="text-lg text-gray-600 mb-4"><strong>Vision:</strong> To empower businesses to thrive by leveraging the power of AI and automation.</p>
+            <p class="text-lg text-gray-600 mb-8"><strong>Mission:</strong> To deliver cutting-edge solutions that help businesses automate their operations, increase productivity, and drive innovation.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary mb-8">Meet Our Team</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="team-member text-center">
+                    <img src="assets/images/team-member1.jpg" alt="Team Member 1" class="w-40 h-40 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-secondary">John Doe</h3>
+                    <p class="text-gray-600">CEO & Founder</p>
+                    <p class="text-gray-500 mt-2">John is the visionary behind Redline Intelligence, leading our team towards innovative AI and automation solutions.</p>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-member text-center">
+                    <img src="assets/images/team-member2.jpg" alt="Team Member 2" class="w-40 h-40 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-secondary">Jane Smith</h3>
+                    <p class="text-gray-600">CTO</p>
+                    <p class="text-gray-500 mt-2">Jane leads our tech team, ensuring we stay ahead of the curve with cutting-edge AI models and automation frameworks.</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-member text-center">
+                    <img src="assets/images/team-member3.jpg" alt="Team Member 3" class="w-40 h-40 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-secondary">Alex Johnson</h3>
+                    <p class="text-gray-600">Lead Developer</p>
+                    <p class="text-gray-500 mt-2">Alex is the mastermind behind our software development team, building reliable and efficient systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Join Us on Our Journey</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">We are always looking for passionate individuals to join our team and help us make a difference in the world through AI and automation.</p>
+            <a href="contact.html" class="bg-white text-primary px-8 py-4 rounded-full font-bold hover:bg-gray-100 transform hover:scale-105 transition duration-300 inline-block">
+                Contact Us <i data-feather="send" class="inline ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
