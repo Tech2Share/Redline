@@ -103,14 +103,14 @@ class CustomFooter extends HTMLElement {
                         </div>
                     </div>
                     
-                    <!-- Services Links -->
+                    <!-- Updated Services Links -->
                     <div>
                         <h3>Services</h3>
                         <ul>
                             <li><a href="services.html" class="footer-link">AI & Machine Learning</a></li>
-                            <li><a href="services.html" class="footer-link">Process Automation</a></li>
-                            <li><a href="services.html" class="footer-link">CRM Solutions</a></li>
-                            <li><a href="services.html" class="footer-link">Data Visualization</a></li>
+                            <li><a href="services.html" class="footer-link">Automation Solutions</a></li>
+                            <li><a href="services.html" class="footer-link">CRM Integration</a></li>
+                            <li><a href="services.html" class="footer-link">Data Science & Visualization</a></li>
                         </ul>
                     </div>
                     
@@ -125,28 +125,32 @@ class CustomFooter extends HTMLElement {
                         </ul>
                     </div>
                     
-                    <!-- Contact Information -->
+                    <!-- Updated Contact Information -->
                     <div>
                         <h3>Contact</h3>
                         <ul>
                             <li class="flex items-center">
                                 <i data-feather="mail" class="mr-2"></i>
-                                <span>info@redlineintel.com</span>
+                                <span>redlineintelligence@gmail.com</span>
                             </li>
                             <li class="flex items-center">
                                 <i data-feather="phone" class="mr-2"></i>
-                                <span>+1 (555) 123-4567</span>
+                                <span>+92 312 356 0670</span>
                             </li>
                             <li class="flex items-center">
                                 <i data-feather="map-pin" class="mr-2"></i>
-                                <span>123 Tech Street, Silicon Valley</span>
+                                <span>Al Kabir town phase 2, Lahore, Pakistan</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="globe" class="mr-2"></i>
+                                <span><a href="https://www.redlineintelligence.com" target="_blank" class="footer-link">www.redlineintelligence.com</a></span>
                             </li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="footer-bottom">
-                    <p>© 2023 Redline Intelligence. All rights reserved.</p>
+                    <p>© 2025 Redline Intelligence. All rights reserved.</p>
                 </div>
             </footer>
         `;
