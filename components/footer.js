@@ -143,7 +143,7 @@ class CustomFooter extends HTMLElement {
                             </li>
                             <li class="flex items-center">
                                 <i data-feather="globe" class="mr-2"></i>
-                                <span><a href="https://www.redlineintelligence.com" target="_blank" class="footer-link">www.redlineintelligence.com</a></span>
+                                <span><a href="https://www.redlineintelligence.com" target="_blank" class="footer-link">https://redline-mu.vercel.app</a></span>
                             </li>
                         </ul>
                     </div>
